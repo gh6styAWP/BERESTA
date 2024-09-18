@@ -12,33 +12,52 @@
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/2726a2a618.js" crossorigin="anonymous"></script>
 
+    <!-- Castom styling -->
+    <link rel="stylesheet" href="style.css">
+
     <title>BERESTA</title>
   </head>
 
 <body>
 
     <!-- HEADER -->
-    <header class ="container-fluid">
-        <div class="container">
-            <div class="row">
+    <header class="container-fluid">
+        <div class="row align-items-center">
 
-                <div class = "col-4">
-                    <h1>BERESTA</h1>
-                </div>
+            <!-- LOGO -->
+            <div class="col-auto">
+                <h1>
+                    <a href="/" class="text-decoration-none text-dark">BERESTA</a>
+                </h1>
+            </div>
 
-                <nav class="col-8">
-                    <ul>
-                        <li><a href="#"><i class="fa-solid fa-house"></i>Главная</a></li>
-                        <li><a href="#">Услуги</a></li>
-                        <li><a href="#">О нас</a></li>
-                        <li><a href="#">Кабинет</a></li>
-                    </ul>
-                </nav>
+            <!-- MENU -->
+            <nav class="col-auto ms-auto">
+                <ul class="list-unstyled d-flex gap-3 mb-0">
+                    <li><a href="#" class="text-decoration-none">Каталог</a></li>
+                    <li><a href="#" class="text-decoration-none">Аудиокниги</a></li>
+                    <li><a href="#" class="text-decoration-none">Стать автором</a></li>
+                </ul>
+            </nav>
 
+            <!-- SEARCH STRING -->
+            <div class="col">
+                <form class="d-flex">
+                    <input class="form-control" type="search" placeholder="Ищите книгу по названию или ключевым словам..." aria-label="Search">
+                </form>
+            </div>
+
+            <!-- ICONS -->
+            <div class="col-auto d-flex gap-3">
+                <a href="#" class="text-dark"><i class="fas fa-shopping-cart"></i></a>
+                <a href="#" class="text-dark"><i class="fas fa-heart"></i></a>
+                <a href="#" class="text-dark"><i class="fas fa-user"></i></a>
             </div>
         </div>
-    </header>
 
+        </div>
+    </header>
+    <!-- HEADER -->
 
 
 </body>
