@@ -1,7 +1,10 @@
 <!doctype html>
 <html lang="en">
 
-   <head>
+
+
+<!-- ВСЯКИЕ ПОДКЛЮЧЕНИЯ START -->
+<head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -15,45 +18,19 @@
     <!-- Custom styling -->
     <link rel="stylesheet" href="style.css">
 
+    <title>BERESTA</title>
+</head>
+<!-- ВСЯКИЕ ПОДКЛЮЧЕНИЯ END -->
+
+
+
+<!-- ГЛАВНАЯ СТРАНИЦА START -->
+<body>
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
-    <title>BERESTA</title>
 
-    <style>
-        /* Высота для слайдов карусели */
-        .carousel-item {
-            height: 300px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            color: white;
-        }
-
-        /* Градиенты для каждого слайда */
-        .slide-1 {
-            background: linear-gradient(135deg, #ff8a00, #da1b60);
-        }
-
-        .slide-2 {
-            background: linear-gradient(135deg, #36d1dc, #5b86e5);
-        }
-
-        .slide-3 {
-            background: linear-gradient(135deg, #c33764, #1d2671);
-        }
-
-        /* Стили текста внутри карусели */
-        .carousel-caption h5 {
-            font-size: 1.5rem;
-            font-weight: bold;
-        }
-    </style>
-  </head>
-
-<body>
-
-    <!-- HEADER -->
+    <!-- HEADER START -->
     <header class="container-fluid">
         <div class="row align-items-center">
 
@@ -89,46 +66,264 @@
             </div>
         </div>
     </header>
-    <!-- HEADER -->
+    <!-- HEADER END-->
 
 
-    <!-- CAROUSEL -->
-    <div class="container mt-4">
-        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-            </div>
-            <div class="carousel-inner">
-                <div class="carousel-item active slide-1">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>Получай достижения за прочитанные книги!</h5>
-                    </div>
-                </div>
-                <div class="carousel-item slide-2">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>У нас ты сможешь найти non-fiction литературу</h5>
-                    </div>
-                </div>
-                <div class="carousel-item slide-3">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>Озвучку книг от AI</h5>
-                    </div>
+    <!-- CAROUSEL START -->
+    <div class="container">
+        <div id="carouselExampleIndicators" class="carousel slide">
+
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="d-block w-100 text-center" style="height: 300px; display: flex; justify-content: center; align-items: center; background-color: black; border-radius: 20px;">
+                    <h5 style="color: white;">BERESTA - это инновационная платформа для чтения книг, и мы рады тебя приветствовать</h5>
                 </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
+            <div class="carousel-item">
+                <div class="d-block w-100 text-center" style="height: 300px; display: flex; justify-content: center; align-items: center; background-color: black; border-radius: 20px;">
+                    <h5 style="color: white;">Отслеживай свой прогресс и получай достижения за прочитанные книги!</h5>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="d-block w-100 text-center" style="height: 300px; display: flex; justify-content: center; align-items: center; background-color: black; border-radius: 20px;">
+                    <h5 style="color: white;">У нас ты сможешь найти non-fiction литературу и озвучку книг от AI</h5>
+                </div>
+            </div>
+        </div>
+        
+
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+
         </div>
     </div>
-    <!-- CAROUSEL -->
+    <!-- CAROUSEL END -->
+
+
+    <!-- MAIN START -->
+    <div class="container">
+
+        <h3>Популярное</h3>
+        <div class="row justify-content-between">
+
+            <!-- карточка-->
+            <div class="col-6 col-md-4 col-lg-2 book-card">
+
+                <img src="C:\Users\saiin\BERESTA\images\book1.png" alt="Москов-Петушкин" class="img-fluid">
+                <div class="book-title">Москва-Петушки</div>
+                <div class="book-author">Венедикт Ерофеев</div>
+                <div class="book-rating">
+                    <span class="rating-star">★</span> 4.2
+                    <span>(412)</span>
+                </div>
+                <span class="badge badge-bestseller">Бестселлер</span>
+            </div>
+
+            <!-- карточка-->
+            <div class="col-6 col-md-4 col-lg-2 book-card">
+
+                <img src="C:\Users\saiin\BERESTA\images\book2.png" alt="Государство" class="img-fluid">
+                <div class="book-title">Государство</div>
+                <div class="book-author">Платон</div>
+                <div class="book-rating">
+                    <span class="rating-star">★</span> 5.0
+                    <span>(128)</span>
+                </div>
+                <span class="badge badge-epub">EPUB</span>
+            </div>
+
+            <!-- карточка -->
+            <div class="col-6 col-md-4 col-lg-2 book-card">
+                <img src="C:\Users\saiin\BERESTA\images\book3.png" alt="Утешение философией" class="img-fluid">
+                <div class="book-title">Утешение философией</div>
+                <div class="book-author">Боэций</div>
+                <div class="book-rating">
+                    <span class="rating-star">★</span> 5.0
+                    <span>(149)</span>
+                </div>
+                <span class="badge badge-hit">Хит продаж</span>
+            </div>
+        
+            <div class="col-6 col-md-4 col-lg-2 book-card">
+                <img src="C:\Users\saiin\BERESTA\images\book4.png" alt="Москов-Петушкин" class="img-fluid">
+                <div class="book-title">Москва-Петушки</div>
+                <div class="book-author">Венедикт Ерофеев</div>
+                <div class="book-rating">
+                  <span class="rating-star">★</span> 4.2
+                  <span>(412)</span>
+                </div>
+                <span class="badge badge-bestseller">Бестселлер</span>
+            </div>
+        </div>
+
+
+        <h3>Хиты</h3>
+        <div class="row justify-content-between">
+
+            <!-- карточка-->
+            <div class="col-6 col-md-4 col-lg-2 book-card">
+
+                <img src="C:\Users\saiin\BERESTA\images\book1.png" alt="Москов-Петушкин" class="img-fluid">
+                <div class="book-title">Москва-Петушки</div>
+                <div class="book-author">Венедикт Ерофеев</div>
+                <div class="book-rating">
+                    <span class="rating-star">★</span> 4.2
+                    <span>(412)</span>
+                </div>
+                <span class="badge badge-bestseller">Бестселлер</span>
+            </div>
+
+            <!-- карточка-->
+            <div class="col-6 col-md-4 col-lg-2 book-card">
+
+                <img src="C:\Users\saiin\BERESTA\images\book2.png" alt="Государство" class="img-fluid">
+                <div class="book-title">Государство</div>
+                <div class="book-author">Платон</div>
+                <div class="book-rating">
+                    <span class="rating-star">★</span> 5.0
+                    <span>(128)</span>
+                </div>
+                <span class="badge badge-epub">EPUB</span>
+            </div>
+
+            <!-- карточка -->
+            <div class="col-6 col-md-4 col-lg-2 book-card">
+                <img src="C:\Users\saiin\BERESTA\images\book3.png" alt="Утешение философией" class="img-fluid">
+                <div class="book-title">Утешение философией</div>
+                <div class="book-author">Боэций</div>
+                <div class="book-rating">
+                    <span class="rating-star">★</span> 5.0
+                    <span>(149)</span>
+                </div>
+                <span class="badge badge-hit">Хит продаж</span>
+            </div>
+        
+            <div class="col-6 col-md-4 col-lg-2 book-card">
+                <img src="C:\Users\saiin\BERESTA\images\book4.png" alt="Москов-Петушкин" class="img-fluid">
+                <div class="book-title">Москва-Петушки</div>
+                <div class="book-author">Венедикт Ерофеев</div>
+                <div class="book-rating">
+                  <span class="rating-star">★</span> 4.2
+                  <span>(412)</span>
+                </div>
+                <span class="badge badge-bestseller">Бестселлер</span>
+            </div>
+        </div>
+
+        <h3>Бестселлеры</h3>
+        <div class="row justify-content-between">
+
+            <!-- карточка-->
+            <div class="col-6 col-md-4 col-lg-2 book-card">
+
+                <img src="C:\Users\saiin\BERESTA\images\book1.png" alt="Москов-Петушкин" class="img-fluid">
+                <div class="book-title">Москва-Петушки</div>
+                <div class="book-author">Венедикт Ерофеев</div>
+                <div class="book-rating">
+                    <span class="rating-star">★</span> 4.2
+                    <span>(412)</span>
+                </div>
+                <span class="badge badge-bestseller">Бестселлер</span>
+            </div>
+
+            <!-- карточка-->
+            <div class="col-6 col-md-4 col-lg-2 book-card">
+
+                <img src="C:\Users\saiin\BERESTA\images\book2.png" alt="Государство" class="img-fluid">
+                <div class="book-title">Государство</div>
+                <div class="book-author">Платон</div>
+                <div class="book-rating">
+                    <span class="rating-star">★</span> 5.0
+                    <span>(128)</span>
+                </div>
+                <span class="badge badge-epub">EPUB</span>
+            </div>
+
+            <!-- карточка -->
+            <div class="col-6 col-md-4 col-lg-2 book-card">
+                <img src="C:\Users\saiin\BERESTA\images\book3.png" alt="Утешение философией" class="img-fluid">
+                <div class="book-title">Утешение философией</div>
+                <div class="book-author">Боэций</div>
+                <div class="book-rating">
+                    <span class="rating-star">★</span> 5.0
+                    <span>(149)</span>
+                </div>
+                <span class="badge badge-hit">Хит продаж</span>
+            </div>
+        
+            <div class="col-6 col-md-4 col-lg-2 book-card">
+                <img src="C:\Users\saiin\BERESTA\images\book4.png" alt="Москов-Петушкин" class="img-fluid">
+                <div class="book-title">Москва-Петушки</div>
+                <div class="book-author">Венедикт Ерофеев</div>
+                <div class="book-rating">
+                  <span class="rating-star">★</span> 4.2
+                  <span>(412)</span>
+                </div>
+                <span class="badge badge-bestseller">Бестселлер</span>
+            </div>
+        </div>
+    </div>
+    <!-- MAIN END -->
+
+
+    <!-- FOOTER START -->
+    <div class="row">
+      <div class="col-sm-6 mb-3 mb-sm-0">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Special title treatment</h5>
+            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Special title treatment</h5>
+            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card text-center">
+      <div class="card-header">
+        <ul class="nav nav-tabs card-header-tabs">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="true" href="#">Active</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+          </li>
+        </ul>
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">Special title treatment</h5>
+        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+    </div>
+    <!-- FOOTER END -->
+
 
 </body>
-
 </html>
